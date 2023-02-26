@@ -1,0 +1,6 @@
+Privacy assurance
+
+This extention doesn't record any information
+outside your chrome localstorage and does NOT 
+call any API calls or sends or recieves any
+infomation via network or by other means.

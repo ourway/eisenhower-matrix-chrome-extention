@@ -1,10 +1,21 @@
 {
-  "name": "Hello Extensions",
-  "description": "Base Level Extension",
-  "version": "1.0",
-  "manifest_version": 3,
-  "action": {
-    "default_popup": "hello.html",
-    "default_icon": "hello_extensions.png"
-  }
+	"name": "Eisenhower Matrix",
+	"description": "The Eisenhower Matrix is a simple tool for considering the long-term outcomes of your daily tasks",
+	"version": "1.0",
+	"manifest_version": 3,
+	"icons": {
+		"16": "icon-16.png",
+		"32": "icon-32.png",
+		"48": "icon-48.png",
+		"128": "icon-128.png"
+	},
+	"action": {
+		"default_popup": "popup.html",
+		"default_icon": {
+			"16": "icon-16.png",
+			"32": "icon-32.png",
+			"48": "icon-48.png",
+			"128": "icon-128.png"
+		}
+	}
 }

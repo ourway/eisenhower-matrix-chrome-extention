@@ -1,0 +1,152 @@
+:root {
+  --hot-color: #ff5733;
+  --warm-color: #ffc487;
+  --medium-color: #ffea87;
+  --cool-color: #e0f3fa;
+  --cold-color: #ebebeb;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --hot-color: #ff7f7f;
+    --warm-color: #ffc487;
+    --medium-color: #ffea87;
+    --cool-color: #bde6f7;
+    --cold-color: #363636;
+  }
+  
+  body {
+  background-color: #565656;
+  color: lightgrey;
+  background-image: url(/3px-tile.png);
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 10px;
+  background-image: url(/3px-tile.png);
+  margin: 2vw;
+  padding: 3vw;
+  width: 640px;
+  font-variant-ligatures: none;
+  font-feature-settings: "liga" 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  margin: 0 0 10px;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+input[type="text"],
+input[type="number"] {
+  margin-right: 10px;
+  padding: 5px;
+  border: 1px solid #0097a7;
+  border-radius: 1px;
+}
+
+input[type="number"] {
+  width: 50px;
+  flex: 0.3;
+}
+input[type="text"] {
+  flex: 0.7;
+  width: 50px;
+}
+
+button {
+flex: 0 0 auto;
+    margin-top: 2px;
+    padding: 2px 4px;
+    cursor: pointer;
+}
+
+button#clear-button {
+	margin-top: 10vw;
+    background-color: transparent;
+    color: grey;
+    border: 1px solid black;
+    font-size: 10px;
+    clear: both;
+}
+
+button:hover {
+  background-color: black;
+  color: #fff;
+}
+
+#matrix {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#matrix > div {
+	flex: 1;
+    margin: 3px;
+    padding: 1vw 4vw 11px 1vw;
+    border: 4px solid;
+    border-radius: 1px;
+}
+
+#matrix > div > h2 {
+  margin: 0;
+  padding: 1px;
+  border-radius: 1px 1px 0 0;
+  width: 35vw;
+}
+
+#matrix > div > ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#matrix > div > ul > li {
+  margin-bottom: 10px;
+  padding: 5px;
+  border: 1px solid #0097a7;
+  background-color: #ffffffa1;
+  color: #000;
+  border-radius: 1px;
+  font-family: system-ui;
+  text-transform: capitalize;
+}
+
+.do-first {
+  background-color: var(--warm-color);
+  color: #9e5000;
+  border: 2px solid;
+  font-weight: 700;
+}
+.schedule {
+  background-color: var(--medium-color);
+  color: #b09100;
+  font-weight: 500;
+}
+.delegate {
+  background-color: var(--cool-color);
+  color: #83d6f4;
+  font-weight: 300;
+}
+.eliminate {
+  background-color: var(--cold-color);
+  color: grey;
+  font-weight: 300;
+}

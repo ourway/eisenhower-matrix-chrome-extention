@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Eisenhower Matrix</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <h1>Eisenhower Matrix</h1>
+    <p>Use the Eisenhower Matrix to prioritize your tasks.</p>
+    <form id="task-form">
+      <label for="task">Enter a task:</label>
+      <input type="text" id="task" name="task">
+      <label for="urgency">Enter the urgency level (1-4):</label>
+      <input type="number" id="urgency" name="urgency" min="1" max="4">
+      <button type="submit">Add Task</button>
+    </form>
+    <div id="matrix">
+      <div class="do-first">
+        <h2>Do First:</h2>
+        <ul id="do-first"></ul>
+      </div>
+      <div class="schedule">
+        <h2>Schedule:</h2>
+        <ul id="schedule"></ul>
+      </div>
+      <div class="delegate">
+        <h2>Delegate:</h2>
+        <ul id="delegate"></ul>
+      </div>
+      <div class="eliminate">
+        <h2>Eliminate:</h2>
+        <ul id="eliminate"></ul>
+      </div>
+	  <button type="button" id="clear-button">Clear All Tasks</button>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>
